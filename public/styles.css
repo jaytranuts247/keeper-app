@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Montserrat", sans-serif, "Open Sans";
+}
+body {
+  background: #eee;
+  padding: 0 16px;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+}
+
+header {
+  background-color: #f5ba13;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+footer {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+}
+
+footer p {
+  color: #ccc;
+}
+
+div.container {
+  width: 80%;
+  margin: 20px auto;
+  height: 550px;
+  overflow: auto;
+}
+
+.allnote {
+  /*display: flex;*/
+}
+.note {
+  position: relative;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  margin: 4px;
+  float: left;
+  max-width: inherit;
+}
+.note h1,
+input {
+  font-size: 1.1em;
+  margin-bottom: 6px;
+}
+
+.note p,
+textarea {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.note input {
+  border: none;
+  width: 100%;
+  padding: 4px;
+  outline: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+}
+
+.note textarea {
+  position: relative;
+  border: none;
+  width: 100%;
+  padding: 4px;
+  outline: none;
+  font-family: inherit;
+  word-break: break-all;
+  word-wrap: break-word;
+  resize: none;
+}
+
+.note button {
+  position: relative;
+  float: right;
+  /*margin-right: 10px;*/
+  color: #f5ba13;
+  border: none;
+  width: 42px;
+  height: 36px;
+  cursor: pointer;
+  outline: none;
+  background: #fff;
+}
+div.for-form {
+  margin: 0 auto;
+  width: 480px;
+  padding: 0px;
+  height: 64px;
+  overflow: visible;
+  outline: none;
+  border: none;
+  resize: none;
+}
+form.create-note {
+  position: relative;
+  width: 480px;
+  z-index: 1;
+  margin: 30px auto 20px auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 7px;
+  box-shadow: 0 1px 5px rgb(138, 137, 137);
+}
+form.create-note input,
+form.create-note textarea {
+  width: 100%;
+  border: none;
+  padding: 4px;
+  outline: none;
+  font-size: 1.2em;
+  font-family: inherit;
+  resize: none;
+  border: 0px;
+}
+form.create-note textarea {
+  height: auto;
+}
+form.create-note button {
+  position: absolute;
+  right: 18px;
+  bottom: -18px;
+  background: #f5ba13;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  outline: none;
+}
+@keyframes example {
+  from {
+    background-color: red;
+  }
+  to {
+    background-color: yellow;
+  }
+}
+
+@keyframes comeIn {
+  0% {
+    transform: scale(0);
+  }
+  75% {
+    transform: scale(1.03);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.xmasonry .xblock {
+  animation: comeIn ease 0.5s;
+  animation-iteration-count: 1;
+  transition: left 0.3s ease, top 0.3s ease;
+}
+.xblock {
+  margin: 8px;
+}

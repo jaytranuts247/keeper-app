@@ -1,0 +1,45 @@
+.remove-btn {
+	margin-right: 0.5rem;
+}
+
+.item-enter {
+	opacity: 0;
+}
+.item-enter-active {
+	opacity: 1;
+	transition: opacity 250ms ease-in 250ms;
+}
+.item-enter-done {
+	opacity: 1;
+}
+.item-exit {
+	opacity: 1;
+}
+.item-exit-active {
+	opacity: 0;
+	transition: opacity 500ms ease-in;
+}
+
+.item-exit-done {
+	opacity: 0;
+}
+
+.expand-enter {
+	height: 31px;
+}
+
+.expand-enter-active {
+	height: 77px;
+	transition: opacity height 1500ms linear;
+}
+@keyframe example {
+	0% {
+		background-color: red;
+	}
+	100% {
+		background-color: blue;
+	}
+}
+.animation {
+	animation: example 2s ease-in;
+}
