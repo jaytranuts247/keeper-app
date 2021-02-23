@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // import Masonry from "react-masonry-component";
 import { XMasonry, XBlock } from "react-xmasonry";
 // import { useSpring, animated } from "react-spring";
@@ -7,7 +7,6 @@ import Footer from "./components/Footer";
 import Note from "./components/Note";
 import InitialNotes from "./components/notes";
 import AddNote from "./components/AddNote";
-import { Transition, animated } from "react-spring/renderprops";
 
 /*
 	- Add animation when expand and collapse Note 
@@ -16,7 +15,6 @@ import { Transition, animated } from "react-spring/renderprops";
 */
 
 function App() {
-
 	const [notes, setNotes] = useState(InitialNotes);
 	// const [isDelete, setIsDelete] = useState(false);
 

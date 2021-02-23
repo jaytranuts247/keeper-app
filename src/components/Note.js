@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 // import { useTransition, useSpring, animated } from "react-spring";
 import DeleteIcon from "@material-ui/icons/Delete";
 import SendIcon from "@material-ui/icons/Send";
@@ -35,7 +35,7 @@ function Note(props) {
 		};
 		setNote(updateNote);
 		if (IsEdit) setAutoResize();
-	}, []);
+	}, [IsEdit, props.content, props.id, props.title, setAutoResize]);
 
 	function onDelete(e) {
 		// setIsDelete(true);
